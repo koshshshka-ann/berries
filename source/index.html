@@ -15,17 +15,312 @@
   <link rel="preload" href="fonts/ralewayregular.woff2" type="font/woff2" as="font">
 </head>
 <body class="page-body">
-  <header class="main-header">
-
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+      <a class="main-nav__logo-link" title="Вы находитесь на главной странице">
+        <span class="visually-hidden">Логотип сайта "Ягода"</span>
+        <svg class="main-nav__logo-picture" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#logo-picture"></use>
+        </svg>
+        <svg class="main-nav__logo-text" width="65" height="36" viewBox="0 0 65 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <svg width="46" height="30" viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#icon-burger-menu"></use>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__list-wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Заказать</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main class="main-container main-container--nojs">
-
+  <main class="main-container">
+    <h1 class="visually-hidden">Интернет-магазин "Ягода"</h1>
+    <section class="promo">
+      <h2 class="promo__title">Ягоды с доставкой</h2>
+      <ul class="promo__list">
+        <li class="promo__item">Отборные ягоды</li>
+        <li class="promo__item">Натуральный вкус сохранён методом шоковой заморозки</li>
+        <li class="promo__item">Доставка по Санкт-Петербургу</li>
+      </ul>
+      <div class="promo__button-wrapper">
+        <a class="promo__button" href="form.html">Заказать</a>
+      </div>
+    </section>
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item product">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-raspberry.webp 1x, img/product-raspberry@2x.webp 2x">
+              <img class="product__image" src="img/product-raspberry.jpg" srcset="product-raspberry@2x.jpg 2x" width="264" height="180" alt="Малина крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Малина</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">350 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-blackberry.webp 1x, img/product-blackberry@2x.webp 2x">
+              <img class="product__image" src="img/product-blackberry.jpg" srcset="product-blackberry@2x.jpg 2x" width="264" height="180" alt="Ежевика крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Ежевика</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">550 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-lingonberry.webp 1x, img/product-lingonberry@2x.webp 2x">
+              <img class="product__image" src="img/product-lingonberry.jpg" srcset="product-lingonberry@2x.jpg 2x" width="264" height="180" alt="Брусника крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Брусника</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">390 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-strawberry.webp 1x, img/product-strawberry@2x.webp 2x">
+              <img class="product__image" src="img/product-strawberry.jpg" srcset="product-strawberry@2x.jpg 2x" width="264" height="180" alt="Клубника крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Клубника</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">450 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-cherry.webp 1x, img/product-cherry@2x.webp 2x">
+              <img class="product__image" src="img/product-cherry.jpg" srcset="product-cherry@2x.jpg 2x" width="264" height="180" alt="Вишня крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Вишня</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">375 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-gooseberry.webp 1x, img/product-gooseberry@2x.webp 2x">
+              <img class="product__image" src="img/product-gooseberry.jpg" srcset="product-gooseberry@2x.jpg 2x" width="264" height="180" alt="Крыжовник крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Крыжовник</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">300 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product product--nomobile">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-blueberry.webp 1x, img/product-blueberry@2x.webp 2x">
+              <img class="product__image" src="img/product-blueberry.jpg" srcset="product-blueberry@2x.jpg 2x" width="264" height="180" alt="Голубика крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Голубика</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">510 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item product product--nomobile">
+          <a class="product__image-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/product-cranberry.webp 1x, img/product-cranberry@2x.webp 2x">
+              <img class="product__image" src="img/product-cranberry.jpg" srcset="product-cranberry@2x.jpg 2x" width="264" height="180" alt="Клюква крупным планом">
+            </picture>
+          </a>
+          <a class="product__title-link" href="#">
+            <h3 class="product__title">Клюква</h3>
+          </a>
+          <p class="product__description">
+            <span class="product__price">320 ₽</span>
+            <span class="product__weight">за 1 кг</span>
+          </p>
+          <div class="product__button-wrapper">
+            <a class="product__button" href="form.html">Заказать</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="news">
+      <h2 class="visually-hidden">Новости магазина</h2>
+      <p class="news__itle">Что новенького?</p>
+      <ul class="news__list">
+        <li class="news__item">
+          <h3 class="news__item-title">Новый урожай клубники</h3>
+          <p class="news__text">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
+          <time class="news__date" datetime="2022-06-22">22 июня 2022</time>
+        </li>
+        <li class="news__item">
+          <h3 class="news__item-title">В июне дарим скидку 15% на все свежие ягоды</h3>
+          <p class="news__text">Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
+          <time class="news__date" datetime="2022-06-15">15 июня 2022</time>
+        </li>
+        <li class="news__item">
+          <h3 class="news__item-title">Микс из ягод</h3>
+          <p class="news__text">Мы приготовим для вас смеси из различных замороженных ягод по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их естественный вкус и аромат.</p>
+          <time class="news__date" datetime="2022-06-02">02 июня 2022</time>
+        </li>
+      </ul>
+    </section>
   </main>
 
-  <footer class="main-footer">
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <p class="contacts__titile">Где забрать ягоды?</p>
+    <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <span class="contacts__address">Набережная Обводного канала, 101</span>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link" href="tel:+79105244118">
+          <svg class="contacts__icon" width="16" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#icon-contacts-phone"></use>
+          </svg>
+          + 7 910 524 41 18</a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link" href="mailto:info@yagoda.ru">
+          <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#icon-contacts-email"></use>
+        </svg>
+        info@yagoda.ru</a>
+      </li>
+    </ul>
+    <div class="contacts__map-wrapper">
+      <div class="contacts__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+          <img class="contacts__image-map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта расположения нашего склада">
+        </picture>
+      </div>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d64d2a27e15533ea7012e40741485a7416a954a489ea6959d93d58e705f2714&amp;source=constructor"></iframe>
+    </div>
+  </section>
 
-  </footer>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo-link">
+        <svg class="page-footer__logo" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#logo-picture"></use>
+        </svg>
+        <span class="visually-hidden">Логотип "Ягода"</span>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://web.telegram.org/">
+              <span class="visually-hidden">Наш канал в Телеграм</span>
+              <svg class="social__icon" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com">
+              <span class="visually-hidden">Мы ВКонтакте</span>
+              <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://youtube.com">
+              <span class="visually-hidden">Наш канал на YouTube</span>
+              <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="copyright__text">HTML Academy</span>
+          <span class="visually-hidden">Логотип HTML-академии</span>
+          <svg width="26" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+</footer>
 
   <script src="js/menu.min.js"></script>
 </body>
