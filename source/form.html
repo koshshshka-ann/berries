@@ -27,7 +27,7 @@
         </svg>
       </a>
       <button class="main-nav__toggle" type="button">
-        <svg width="46" height="30" viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-nav__icon" width="46" height="30" viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use href="img/sprite.svg#icon-burger-menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
@@ -51,7 +51,7 @@
     </nav>
   </header>
 
-  <main class="main-container main-container--nojs">
+  <main class="main-container">
     <h1 class="visually-hidden">Форма заказа ягод</h1>
     <section class="form-intro">
       <h2 class="form-intro__title">Закажи ягоды</h2>
@@ -59,7 +59,7 @@
         и доставим их в удобном для вас виде - свежими или замороженными</p>
     </section>
     <form class="form-section" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form-block form-block--checkbox">
+      <fieldset class="form-block">
         <legend class="form-block__title">Выберите ягоды</legend>
         <ul class="form-block__list">
           <li class="form-block__item">
@@ -134,7 +134,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-block form-block--checkbox">
+      <fieldset class="form-block">
         <legend class="form-block__title">Вид хранения</legend>
         <ul class="form-block__list">
           <li class="form-block__item">
@@ -160,7 +160,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-block form-block--checkbox">
+      <fieldset class="form-block">
         <legend class="form-block__title">Способ доставки</legend>
         <ul class="form-block__list">
           <li class="form-block__item">
@@ -179,7 +179,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-block form-block--checkbox">
+      <fieldset class="form-block">
         <legend class="form-block__title">Ваши контакты</legend>
         <ul class="form-block__list">
           <li class="form-block__item">
@@ -203,7 +203,7 @@
           <li class="form-block__item">
             <label class="form-block__label">Адрес
               <span class="form-block__asterisk">*</span>
-              <textarea class="form-block__input" name="address" placeholder="Адрес в Санкт-Петербурге" required>
+              <textarea class="form-block__input" name="address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
             </label>
           </li>
         </ul>
@@ -211,7 +211,7 @@
       <div class="form-block">
         <div class="form-block__item">
           <label class="form-block__label">Пожелания к заказу
-            <textarea class="form-block__input" name="comment" placeholder="Чем мы можем вам помочь?">
+            <textarea class="form-block__input" name="comment" placeholder="Чем мы можем вам помочь?"></textarea>
           </label>
         </div>
       </div>
@@ -305,8 +305,7 @@
         </a>
       </div>
     </div>
-</footer>
-
+  </footer>
 
   <script src="js/menu.min.js"></script>
 </body>
