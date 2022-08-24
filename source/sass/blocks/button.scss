@@ -1,0 +1,51 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 264px;
+  min-height: 56px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: $raleway;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $text-white;
+  background-color: $accent-violet;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $adding-purple;
+  }
+
+  &:active {
+    background-color: $adding-pale-purple;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 336px;
+    min-height: 68px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &--product {
+    width: 220px;
+    min-height: 52px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    font-size: 20px;
+    line-height: 23px;
+    box-shadow: none;
+  }
+}
