@@ -4,13 +4,28 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-max-width: $tablet-width - 1;
 
-// Main colors
-$basic-gray: #eaeaea;
-$light-gray: #f2f2f2;
-$dark-gray: #444444;
-$basic-green: #68b738;
-$border-gray: #cdcdcd;
+// Background colors
+$background-light: #fbfcfe;
+$background-medium: #f1f6fc;
+$background-dark: rgba(142, 152, 146, 0.7);
+
+// Accent colors
+$accent-violet: #6a107a;
+$accent-green: #0f805d;
+
+// Text colors
+$text-black: #000000;
+$text-white: #fbfcfe;
+$text-grey: rgba(142, 152, 146, 0.7);
+
+// Adding colors
+$adding-purple: #b22ec8;
+$adding-pale-purple: rgba(106, 16, 122, 0.6);
+$adding-light-green: #7bdb0a;
+$adding-pale-green: rgba(15, 128, 93, 0.5);
+$adding-coral: #ff8282;
+
 
 // Fonts
-$main-font-family: "Oswald", "Arial", sans-serif;
-$secondary-font-family: "Arial", sans-serif;
+$comfortaa: "Comfortaa", "Arial", sans-serif;
+$railway: "Railway", "Arial", sans-serif;
