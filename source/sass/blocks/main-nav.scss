@@ -1,0 +1,260 @@
+.main-nav {
+  background-color: $background-medium;
+  position: relative;
+  z-index: 1;
+
+  &--opened .main-nav__burger {
+    display: none;
+  }
+
+  &--opened .main-nav__list-wrapper {
+    background-color: $background-medium;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &--closed .main-nav__cross {
+    display: none;
+  }
+
+  &--closed .main-nav__burger {
+    display: block;
+  }
+
+  &--closed .main-nav__list-wrapper {
+    display: none;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  &--nojs .main-nav__list-wrapper {
+    display: block;
+    position: static;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+
+    &--opened .main-nav__list-wrapper,
+    &--closed .main-nav__list-wrapper,
+    &--nojs .main-nav__list-wrapper {
+      display: block;
+      position: static;
+      z-index: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 716px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1092px;
+    padding-right: 36px;
+  }
+}
+
+.main-nav__mobile-container {
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+.main-nav__mobile-wrapper {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 68px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 60px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-nav__logo-link {
+  display: block;
+  padding-top: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:hover .main-nav__logo-fill {
+    color: $adding-light-green;
+  }
+
+  &:active .main-nav__logo-fill {
+    color: $adding-pale-green;
+  }
+
+  &:focus {
+    outline-color: $accent-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+
+    &:hover .main-nav__logo-text {
+      fill: $adding-light-green;
+    }
+
+    &:active .main-nav__logo-text {
+      fill: $adding-pale-green;
+    }
+  }
+}
+
+.main-nav__logo-picture {
+  width: 36px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 41px;
+    height: 52px;
+    margin-right: 17px;
+  }
+}
+
+.main-nav__logo-fill {
+  color: $accent-green;
+}
+
+.main-nav__logo-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    fill: $accent-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__toggle {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  background-color: $background-medium;
+  border: none;
+  cursor: pointer;
+
+  &:hover .main-nav__burger,
+  &:hover .main-nav__cross {
+    fill: $adding-light-green;
+  }
+
+  &:active .main-nav__burger,
+  &:active .main-nav__cross {
+    fill: $adding-pale-green;
+  }
+
+  &:focus {
+    outline-color: $accent-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__burger,
+.main-nav__cross {
+  fill: $accent-green;
+}
+
+.main-nav__list-wrapper {
+  width: 100%;
+  min-height: 360px - 16px;
+  padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    min-height: 60px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+  }
+}
+
+.main-nav__list {
+  width: 264px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $text-black;
+
+  &:hover {
+    color: $adding-light-green;
+  }
+
+  &:active {
+    color: $accent-green;
+  }
+
+  &:focus {
+    outline-color: $accent-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 111px;
+    min-height: 60px - 40px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    padding-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+    padding-left: 28px;
+  }
+}

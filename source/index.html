@@ -17,36 +17,45 @@
 <body class="page-body">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
-      <a class="main-nav__logo-link" title="Вы находитесь на главной странице">
-        <span class="visually-hidden">Логотип интернет-магазина "Ягода"</span>
-        <svg class="main-nav__logo-picture" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="img/sprite.svg#logo-picture"></use>
-        </svg>
-        <svg class="main-nav__logo-text" width="65" height="36" viewBox="0 0 65 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="img/sprite.svg#logo-text"></use>
-        </svg>
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <svg class="main-nav__icon" width="46" height="30" viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="img/sprite.svg#icon-burger-menu"></use>
-        </svg>
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__list-wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Заказать</a>
-          </li>
-        </ul>
+      <div class="main-nav__wrapper">
+        <div class="main-nav__mobile-container">
+          <div class="main-nav__mobile-wrapper">
+            <a class="main-nav__logo-link" title="Вы находитесь на главной странице">
+              <span class="visually-hidden">Логотип интернет-магазина "Ягода"</span>
+              <svg class="main-nav__logo-picture" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use class="main-nav__logo-fill" href="img/sprite.svg#logo-picture"></use>
+              </svg>
+              <svg class="main-nav__logo-text" width="65" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#logo-text"></use>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__burger" width="46" height="30" viewBox="0 0 46 30" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#icon-burger-menu"></use>
+              </svg>
+              <svg class="main-nav__cross" width="28" height="29" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#icon-close-menu"></use>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+        </div>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#catalog">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#news">Новости</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Заказать</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -64,7 +73,7 @@
         <a class="promo__button button" href="form.html">Заказать</a>
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <h2 class="catalog__title  section-title">Каталог</h2>
       <ul class="catalog__list">
         <li class="catalog__item product">
@@ -213,7 +222,7 @@
         </li>
       </ul>
     </section>
-    <section class="news">
+    <section class="news" id="news">
       <h2 class="visually-hidden">Новости магазина</h2>
       <p class="news__title section-title">Что новенького?</p>
       <ul class="news__list">
@@ -236,7 +245,7 @@
     </section>
   </main>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__titile section-title">Где забрать ягоды?</p>
     <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
@@ -322,6 +331,6 @@
     </div>
 </footer>
 
-  <script src="js/menu.min.js"></script>
+  <!--<script src="js/menu.min.js"></script>-->
 </body>
 </html>

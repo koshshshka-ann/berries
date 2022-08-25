@@ -6,4 +6,27 @@
   font-family: $raleway;
   color: $text-black;
   position: relative;
+
+  & ul {
+    list-style-type: none;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & img {
+    display: block;
+  }
+
+  & h1,
+  & h2,
+  & h3 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  & p {
+    margin: 0;
+  }
 }
