@@ -35,25 +35,62 @@
     display: block;
     position: static;
   }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+
+    &--opened .main-nav__list-wrapper,
+    &--closed .main-nav__list-wrapper,
+    &--nojs .main-nav__list-wrapper {
+      display: block;
+      position: static;
+      z-index: 0;
+    }
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 716px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__mobile-container {
-  box-sizing: border-box;
-  min-height: 68px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
 .main-nav__mobile-wrapper {
+  box-sizing: border-box;
   width: 280px;
+  min-height: 68px;
   margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 60px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .main-nav__logo-link {
-  display: inline-block;
+  display: block;
   padding-top: 4px;
   padding-left: 15px;
   padding-right: 15px;
@@ -69,6 +106,36 @@
   &:focus {
     outline-color: $accent-green;
   }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 138px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover .main-nav__logo-text {
+      fill: $adding-light-green;
+    }
+
+    &:active .main-nav__logo-text {
+      fill: $adding-pale-green;
+    }
+  }
+}
+
+.main-nav__logo-picture {
+  width: 36px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 51px;
+  }
 }
 
 .main-nav__logo-fill {
@@ -77,6 +144,14 @@
 
 .main-nav__logo-text {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    fill: $accent-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__toggle {
@@ -102,6 +177,10 @@
   &:focus {
     outline-color: $accent-green;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__burger,
@@ -113,12 +192,33 @@
   width: 100%;
   min-height: 360px - 16px;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    min-height: 60px;
+    padding: 0;
+  }
 }
 
 .main-nav__list {
   width: 264px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    &:not(:nth-child(4n + 4)) {
+      padding-right: 16px;
+    }
+  }
 }
 
 .main-nav__link {
@@ -129,6 +229,14 @@
   font-size: 20px;
   line-height: 23px;
   color: $text-black;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    min-height: 60px - 40px;
+    padding: 0;
+    padding-top: 19px;
+    padding-bottom: 18px;
+  }
 
   &:hover {
     color: $adding-light-green;
