@@ -1,8 +1,39 @@
 .main-nav {
   background-color: $background-medium;
+  position: relative;
+  z-index: 1;
+
+  &--opened .main-nav__burger {
+    display: none;
+  }
+
+  &--opened .main-nav__list-wrapper {
+    background-color: $background-medium;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &--closed .main-nav__cross {
+    display: none;
+  }
+
+  &--closed .main-nav__burger {
+    display: block;
+  }
+
+  &--closed .main-nav__list-wrapper {
+    display: none;
+  }
 
   &--nojs .main-nav__toggle {
     display: none;
+  }
+
+  &--nojs .main-nav__list-wrapper {
+    display: block;
+    position: static;
   }
 }
 
@@ -15,7 +46,7 @@
 }
 
 .main-nav__mobile-wrapper {
-  width: 264px;
+  width: 280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -24,8 +55,8 @@
 .main-nav__logo-link {
   display: inline-block;
   padding-top: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &:hover .main-nav__logo-fill {
     color: $adding-light-green;
@@ -49,37 +80,54 @@
 }
 
 .main-nav__toggle {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
   background-color: $background-medium;
   border: none;
-  padding: 0;
-  padding-top: 5px;
   cursor: pointer;
 
-  &:hover .main-nav__burger {
+  &:hover .main-nav__burger,
+  &:hover .main-nav__cross {
     fill: $adding-light-green;
   }
 
-  &:active .main-nav__burger {
+  &:active .main-nav__burger,
+  &:active .main-nav__cross {
     fill: $adding-pale-green;
+  }
+
+  &:focus {
+    outline-color: $accent-green;
   }
 }
 
-.main-nav__burger {
+.main-nav__burger,
+.main-nav__cross {
   fill: $accent-green;
 }
 
 .main-nav__list-wrapper {
-  width: 264px;
-  min-height: 360px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 360px - 16px;
   padding-top: 16px;
+}
+
+.main-nav__list {
+  width: 264px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .main-nav__link {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 12px;
+  font-size: 20px;
+  line-height: 23px;
   color: $text-black;
 
   &:hover {
