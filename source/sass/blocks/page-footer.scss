@@ -16,6 +16,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1131px;
+    padding-left: 3px;
+  }
 }
 
 .page-footer__wrapper {
@@ -27,5 +32,9 @@
   @media (min-width: $tablet-width) {
     width: 469px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 670px;
   }
 }

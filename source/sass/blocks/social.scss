@@ -6,6 +6,10 @@
     padding-top: 8px;
     width: 196px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
 }
 
 .social__list {
