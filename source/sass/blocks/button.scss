@@ -28,6 +28,10 @@
     background-color: $adding-pale-purple;
   }
 
+  &:focus {
+    outline-color: $accent-green;
+  }
+
   @media (min-width: $tablet-width) {
     width: 336px;
     min-height: 68px;
