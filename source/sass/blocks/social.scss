@@ -1,11 +1,10 @@
 .social {
   width: 136px + 12px;
   padding-top: 3px;
-  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    border-bottom: none;
+    padding-top: 8px;
+    width: 196px;
   }
 }
 
@@ -14,8 +13,17 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style-type: none;
+}
+
+.social__item {
+  &:not(:nth-child(3n + 3)) {
+    padding-right: 8px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 20px;
+    }
+  }
 }
 
 .social__link {
@@ -37,11 +45,21 @@
   &:focus {
     outline-color: $accent-green;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .social__icon {
   width: 32px;
   height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .social__icon-fill {

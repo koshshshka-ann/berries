@@ -3,7 +3,8 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    width: 153px  + 12px;
+    padding-top: 10px;
   }
 }
 
@@ -12,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
   font-size: 11px;
   line-height: 13px;
   color: $text-black;
@@ -36,10 +36,20 @@
   &:focus {
     outline-color: $accent-green;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .copyright__logo {
   width: 20px;
   height: 24px;
   fill: $text-black;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 32px;
+  }
 }
