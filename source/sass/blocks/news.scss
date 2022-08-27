@@ -1,0 +1,55 @@
+.news {
+  background-color: $background-light;
+}
+
+.news__wrapper {
+  padding-top: 96px;
+  padding-bottom: 40px;
+  width: 268px;
+  margin: 0 auto;
+  background-image: url("../img/line-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: left 18px top 0;
+
+  @media (min-width: $tablet-width) {
+    width: 716px;
+    padding-top: 115px;
+    background-size: 296px;
+    background-position: left 212px top 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1128px;
+    padding-top: 140px;
+    background-position: left 416px top 0;
+  }
+}
+
+.news__title {
+  padding-bottom: 64px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 98px;
+  }
+}
+
+.news__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}

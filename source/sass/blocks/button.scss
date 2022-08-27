@@ -12,6 +12,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  letter-spacing: 0.08rem;
   color: $text-white;
   background-color: $accent-violet;
   border: none;
@@ -27,6 +28,10 @@
     background-color: $adding-pale-purple;
   }
 
+  &:focus {
+    outline-color: $accent-green;
+  }
+
   @media (min-width: $tablet-width) {
     width: 336px;
     min-height: 68px;
@@ -34,6 +39,7 @@
     padding-bottom: 18px;
     font-size: 28px;
     line-height: 33px;
+    letter-spacing: 0.1rem;
   }
 
   &--product {
