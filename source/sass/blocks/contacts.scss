@@ -1,0 +1,126 @@
+.contacts {
+  padding-top: 118px;
+  padding-bottom: 64px;
+  background-color: $background-light;
+}
+
+.contacts__title {
+  width: 266px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.contacts__description {
+  width: 266px;
+  margin: 0 auto;
+  padding-bottom: 34px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.contacts__list {
+  width: 266px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.contacts__item {
+  min-height: 32px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 11px;
+
+  &--address {
+    padding-left: 36px;
+    background-image: url("../img/icons/icon-contacts-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: left 7px top 3px;
+  }
+}
+
+.contacts__link {
+  min-height: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: $text-black;
+
+  &--phone {
+    padding-left: 8px;
+  }
+
+  &--email {
+    padding-left: 7px;
+  }
+
+  &:hover {
+    color: $adding-light-green;
+  }
+
+  &:hover .contacts__icon {
+    fill: $adding-light-green;
+  }
+
+  &:active {
+    color: $accent-green;
+  }
+
+  &:active .contacts__icon {
+    fill: $accent-green;
+  }
+}
+
+.contacts__icon {
+  display: block;
+  width: auto;
+  height: auto;
+  fill: $text-black;
+
+  &--phone {
+    margin-right: 13px;
+  }
+
+  &--email {
+    margin-right: 11px;
+  }
+}
+
+.contacts__map-wrapper {
+  position: relative;
+}
+
+.contacts__image-wrapper {
+  width: fit-content;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 39px;
+    height: 32px;
+    background-image: url("../img/icons/icon-map-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 115px;
+    left: 140px;
+  }
+}
+
+.contacts__image-map {
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 372px;
+  border: none;
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
