@@ -1,23 +1,52 @@
 .contacts {
-  padding-top: 118px;
-  padding-bottom: 64px;
   background-color: $background-light;
+  padding-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+}
+
+.contacts__content-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 118px;
+  background-image: url("../img/line-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: left 30px top 0;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding-top: 114px;
+    background-size: 296px;
+    background-position: left 56px top 0;
+  }
 }
 
 .contacts__title {
-  width: 266px;
-  margin: 0 auto;
+  padding-right: 5px;
   text-align: center;
   padding-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+    padding-bottom: 72px;
+  }
 }
 
 .contacts__description {
-  width: 266px;
-  margin: 0 auto;
+  margin: 0;
   padding-bottom: 34px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01rem;
+  }
 }
 
 .contacts__list {
@@ -25,19 +54,35 @@
   margin: 0 auto;
   padding: 0;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 30px;
+  }
 }
 
 .contacts__item {
-  min-height: 32px;
+  margin-bottom: 11px;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 11px;
 
   &--address {
+    min-height: 32px;
     padding-left: 36px;
     background-image: url("../img/icons/icon-contacts-leaf.svg");
     background-repeat: no-repeat;
     background-position: left 7px top 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 20px;
+
+    &--address {
+      background-position: left 5px top -3px;
+    }
   }
 }
 
@@ -71,6 +116,22 @@
 
   &:active .contacts__icon {
     fill: $accent-green;
+  }
+
+  &:focus {
+    outline-color: $accent-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--phone {
+      padding-left: 3px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--email {
+      padding-left: 3px;
+    }
   }
 }
 
@@ -107,6 +168,11 @@
     position: absolute;
     top: 115px;
     left: 140px;
+
+    @media (min-width: $tablet-width) {
+      top: 148px;
+      left: 368px;
+    }
   }
 }
 
@@ -116,6 +182,7 @@
 }
 
 .contacts__map {
+  display: block;
   width: 100%;
   height: 372px;
   border: none;
