@@ -47,11 +47,7 @@
   }
 
   &:focus {
-    outline: none;
-  }
-
-  &:focus .social__icon-fill {
-    color: $adding-light-green;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {

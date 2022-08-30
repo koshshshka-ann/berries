@@ -119,12 +119,7 @@
   }
 
   &:focus {
-    outline: none;
-  }
-
-  &:focus .main-nav__burger,
-  &:focus .main-nav__cross {
-    fill: $adding-light-green;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -184,8 +179,7 @@
   }
 
   &:focus {
-    outline: none;
-    color: $adding-light-green;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {

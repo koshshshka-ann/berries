@@ -34,12 +34,7 @@
   }
 
   &:focus {
-    outline: none;
-    color: $adding-light-green;
-  }
-
-  &:focus .copyright__logo {
-    fill: $adding-light-green;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {

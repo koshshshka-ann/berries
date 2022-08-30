@@ -189,12 +189,7 @@
   }
 
   &:focus {
-    outline: none;
-    color: $adding-light-green;
-  }
-
-  &:focus .contacts__icon {
-    fill: $adding-light-green;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {
