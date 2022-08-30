@@ -2,10 +2,11 @@
 @import "global/fonts.scss";
 @import "global/visually-hidden.scss";
 @import "blocks/page.scss";
-@import "blocks/page-body.scss";
 @import "blocks/button.scss";
 @import "blocks/section-title.scss";
 @import "blocks/logo.scss";
+@import "blocks/page-body.scss";
+@import "blocks/main-container.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
@@ -13,6 +14,9 @@
 @import "blocks/product.scss";
 @import "blocks/news.scss";
 @import "blocks/news-block.scss";
+@import "blocks/form-intro.scss";
+@import "blocks/form-section.scss";
+@import "blocks/form-block.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
