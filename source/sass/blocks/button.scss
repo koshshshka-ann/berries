@@ -29,8 +29,7 @@
   }
 
   &:focus {
-    outline: none;
-    background-color: $adding-purple;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {

@@ -101,13 +101,15 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
   @media (min-width: $tablet-width) {
     &--delivery {
       display: flex;
-      padding-bottom: 45px;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
     }
 
     &--contacts {
@@ -209,6 +211,10 @@
       grid-row: 2;
     }
 
+    &--radio {
+      padding-bottom: 20px;
+    }
+
     &--spb {
       width: 229px;
     }
@@ -218,7 +224,6 @@
     }
 
     &--keeping,
-    &--radio,
     &--contacts {
       padding-bottom: 0;
     }
@@ -374,8 +379,7 @@
   }
 
   &:focus {
-    outline: none;
-    border-color: $adding-light-green;
+    outline-color: $adding-light-green;
   }
 
   &:disabled {
@@ -519,10 +523,10 @@
   background-color: $adding-light-green;
 }
 
-//отключено для соответствия макету
-//.form-block__input:required:invalid {
-//border-color: $adding-coral;
-//}
+//---отключено для соответствия макету---
+/*.form-block__input:required:invalid {
+  border-color: $adding-coral;
+}*/
 
 .form-block__asterisk {
   color: $adding-coral;

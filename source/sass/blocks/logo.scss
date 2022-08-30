@@ -13,11 +13,7 @@
   }
 
   &:focus {
-    outline: none;
-  }
-
-  &:focus .logo__fill {
-    color: $adding-light-green;
+    outline-color: $accent-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -34,10 +30,6 @@
 
     &:active .logo__text {
       fill: $adding-pale-green;
-    }
-
-    &:focus .logo__text {
-      fill: $adding-light-green;
     }
   }
 }
