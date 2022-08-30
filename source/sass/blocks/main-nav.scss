@@ -174,8 +174,10 @@
     color: $adding-light-green;
   }
 
-  &:active {
-    color: $accent-green;
+  &--active {
+    &:active {
+      color: $accent-green;
+    }
   }
 
   &:focus {

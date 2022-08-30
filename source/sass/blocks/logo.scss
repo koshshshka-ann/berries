@@ -8,8 +8,10 @@
     color: $adding-light-green;
   }
 
-  &:active .logo__fill {
-    color: $adding-pale-green;
+  &--active {
+    &:active .logo__fill {
+      color: $adding-pale-green;
+    }
   }
 
   &:focus {
@@ -28,8 +30,10 @@
       fill: $adding-light-green;
     }
 
-    &:active .logo__text {
-      fill: $adding-pale-green;
+    &--active {
+      &:active .logo__text {
+        fill: $adding-pale-green;
+      }
     }
   }
 }
