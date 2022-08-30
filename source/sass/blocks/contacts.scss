@@ -2,6 +2,10 @@
   background-color: $background-light;
   padding-bottom: 64px;
 
+  &--form {
+    background-color: transparent;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 100px;
   }
@@ -29,6 +33,10 @@
     padding-top: 114px;
     background-size: 296px;
     background-position: left 56px top 0;
+
+    &--form {
+      padding-top: 116px;
+    }
   }
 
   @media (min-width: $desktop-width) {

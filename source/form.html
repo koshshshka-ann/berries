@@ -70,8 +70,8 @@
       </div>
     </section>
     <form class="form-section" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form-block">
-        <legend class="form-block__title">Выберите ягоды</legend>
+      <fieldset class="form-block form-block--select">
+        <legend class="form-block__title form-block__title--select">Выберите ягоды</legend>
         <ul class="form-block__list form-block__list--select">
           <li class="form-block__item form-block__item--lingonberry">
             <label class="form-block__label form-block__label--checkbox">
@@ -115,14 +115,14 @@
               клюква
             </label>
           </li>
-          <li class="form-block__item form-block__item--gooseberry">
+          <li class="form-block__item form-block__item--gooseberry form-block__item--notablet">
             <label class="form-block__label form-block__label--checkbox">
               <input class="visually-hidden form-block__input form-block__input--checkbox" type="checkbox" name="gooseberry">
               <span class="form-block__control form-block__control--checkbox"></span>
               крыжовник
             </label>
           </li>
-          <li class="form-block__item form-block__item--raspberry">
+          <li class="form-block__item form-block__item--raspberry form-block__item--notablet">
             <label class="form-block__label form-block__label--checkbox">
               <input class="visually-hidden form-block__input form-block__input--checkbox" type="checkbox" name="raspberry">
               <span class="form-block__control form-block__control--checkbox"></span>
@@ -144,20 +144,20 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-block">
+      <fieldset class="form-block form-block--keeping">
         <legend class="form-block__title">Вид хранения</legend>
         <ul class="form-block__list form-block__list--keeping">
           <li class="form-block__item form-block__item--keeping">
             <label class="form-block__label form-block__label--checkbox">
               <input class="visually-hidden form-block__input form-block__input--checkbox" type="checkbox" name="fresh">
-              <span class="form-block__control form-block__control--checkbox"></span>
+              <span class="form-block__control form-block__control--checkbox form-block__control--spacing"></span>
               свежие ягоды
             </label>
           </li>
-          <li class="form-block__item form-block__item--keeping">
+          <li class="form-block__item form-block__item--keeping form-block__item--frozen">
             <label class="form-block__label form-block__label--checkbox">
               <input class="visually-hidden form-block__input form-block__input--checkbox" type="checkbox" name="frozen">
-              <span class="form-block__control form-block__control--checkbox"></span>
+              <span class="form-block__control form-block__control--checkbox form-block__control--spacing"></span>
               замороженые ягоды
             </label>
           </li>
@@ -170,17 +170,17 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-block">
+      <fieldset class="form-block form-block--delivery">
         <legend class="form-block__title">Способ доставки</legend>
         <ul class="form-block__list form-block__list--delivery">
-          <li class="form-block__item form-block__item--radio">
+          <li class="form-block__item form-block__item--radio form-block__item--spb">
             <label class="form-block__label form-block__label--radio form-block__label--spb">
               <input class="visually-hidden form-block__input form-block__input--radio" type="radio" name="delivery" value="shipping" checked>
               <span class="form-block__control form-block__control--radio"></span>
               Доставка<br>(по СПБ в пределах  КАД)
             </label>
           </li>
-          <li class="form-block__item form-block__item--radio">
+          <li class="form-block__item form-block__item--radio form-block__item--pickup">
             <label class="form-block__label form-block__label--radio">
               <input class="visually-hidden form-block__input form-block__input--radio" type="radio" name="delivery" value="pickup">
               <span class="form-block__control form-block__control--radio"></span>
@@ -190,22 +190,22 @@
         </ul>
       </fieldset>
       <fieldset class="form-block">
-        <legend class="form-block__title">Ваши контакты</legend>
-        <ul class="form-block__list">
-          <li class="form-block__item form-block__item--contacts">
+        <legend class="form-block__title form-block__title--contacts">Ваши контакты</legend>
+        <ul class="form-block__list form-block__list--contacts">
+          <li class="form-block__item form-block__item--contacts form-block__item--name">
             <label class="form-block__label form-block__label--contacts">Имя
               <span class="form-block__asterisk">*</span>
               <input class="form-block__input form-block__input--contacts" type="text" name="name" placeholder="Как к вам обращаться?" required>
             </label>
           </li>
-          <li class="form-block__item form-block__item--contacts">
+          <li class="form-block__item form-block__item--contacts form-block__item--phone">
             <label class="form-block__label form-block__label--contacts">Телефон
               <span class="form-block__asterisk">*</span>
               <input class="form-block__input form-block__input--contacts" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" required>
             </label>
           </li>
           <li class="form-block__item form-block__item--contacts">
-            <label class="form-block__label form-block__label--contacts">Email
+            <label class="form-block__label form-block__label--contacts form-block__item--email">Email
               <span class="form-block__asterisk">*</span>
               <input class="form-block__input form-block__input--contacts" type="email" name="email" placeholder="Ваш email" required>
             </label>
@@ -213,7 +213,7 @@
           <li class="form-block__item form-block__item--address">
             <label class="form-block__label form-block__label--contacts">Адрес
               <span class="form-block__asterisk">*</span>
-              <textarea class="form-block__input form-block__input--contacts form-block__input--address" name="address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+              <textarea class="form-block__input form-block__input--address" name="address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
             </label>
           </li>
         </ul>
@@ -231,7 +231,7 @@
     </form>
   </main>
 
-  <section class="contacts" id="contacts">
+  <section class="contacts contacts--form" id="contacts">
     <div class="contacts__content-wrapper contacts__content-wrapper--form">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__title contacts__title--form section-title">Где забрать ягоды?</p>

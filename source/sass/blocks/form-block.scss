@@ -1,8 +1,19 @@
 .form-block {
+  box-sizing: border-box;
   width: 268px;
   padding: 0;
   margin: 0  auto;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 624px;
+
+    &--select,
+    &--keeping,
+    &--delivery {
+      padding-left: 46px;
+    }
+  }
 }
 
 .form-block__title {
@@ -11,6 +22,20 @@
   font-size: 20px;
   line-height: 23px;
   color: $accent-green;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &--select {
+      letter-spacing: 0.01rem;
+    }
+
+    &--contacts {
+      text-align: center;
+    }
+  }
 }
 
 .form-block__list {
@@ -22,14 +47,46 @@
     min-height: 304px;
     padding-bottom: 32px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, 24px);
+    grid-template-rows: repeat(auto-fit, minmax(24px, max-content));
     grid-template-columns: 124px 123px;
     column-gap: 20px;
     row-gap: 32px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 168px;
+      padding-bottom: 50px;
+      grid-template-columns: 164px 164px 164px;
+      row-gap: 24px;
+    }
   }
 
   &--keeping {
     padding-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 257px 257px;
+      grid-template-rows: repeat(auto-fit, minmax(24px, max-content));
+      column-gap: 20px;
+      row-gap: 24px;
+      padding-bottom: 48px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--delivery {
+      display: flex;
+      padding-bottom: 45px;
+    }
+
+    &--contacts {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: repeat(auto-fit, minmax(76px, max-content));
+      column-gap: 24px;
+      row-gap: 36px;
+      padding-bottom: 34px;
+    }
   }
 }
 
@@ -54,31 +111,100 @@
   &--strawberry {
     grid-column: 1;
     grid-row: 5;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 1;
+    }
   }
 
   &--cranberry {
     grid-column: 1;
     grid-row: 6;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 2;
+    }
   }
 
   &--keeping {
     padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--radio {
     padding-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--contacts {
     padding-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--address {
     padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--adding {
     padding-bottom: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--notablet {
+      display: none;
+    }
+
+    &--frozen {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &--spb {
+      width: 229px;
+    }
+
+    &--pickup {
+      width: 255px;
+    }
+
+    &--name {
+      padding-right: 300px;
+      grid-row: 1;
+      grid-column: 1 / span 2;
+    }
+
+    &--phone {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &--email {
+      grid-row: 2;
+    }
+
+    &--address {
+      grid-row: 3;
+      grid-column: 1 / span 2;
+    }
+
+    &--adding {
+      padding-bottom: 35px;
+    }
   }
 }
 
@@ -102,6 +228,10 @@
 
   &--spb {
     padding-right: 70px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
   }
 
   &--contacts {
@@ -115,6 +245,21 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01rem;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 10px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02rem;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--checkbox,
+    &--radio {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -139,6 +284,12 @@
     margin-right: 12px;
     border: 2px solid $accent-green;
     border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--spacing {
+      margin-right: 24px;
+    }
   }
 }
 
@@ -170,6 +321,7 @@
   }
 
   &--contacts,
+  &--address,
   &--adding {
     box-sizing: border-box;
     width: 100%;
@@ -194,6 +346,7 @@
   &--address {
     resize: none;
     height: 88px;
+    margin-top: 3px;
   }
 
   &--adding {
@@ -203,6 +356,26 @@
 
     &::placeholder {
       letter-spacing: 0.01rem;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--contacts {
+      width: 300px;
+    }
+
+    &--address {
+      height: 52px;
+      overflow: hidden;
+    }
+
+    &--adding {
+      height: 144px;
+      margin-top: 3px;
+
+      &::placeholder {
+        letter-spacing: 0.01rem;
+      }
     }
   }
 }
